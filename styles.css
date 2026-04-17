@@ -849,6 +849,8 @@ textarea { resize: vertical; min-height: 110px; }
     .about-image img { height: 320px; }
     .about-badge     { left: .5rem; bottom: .5rem; }
 
+    .about-text .btn-secondary { display: none; }
+
     .contact-grid { grid-template-columns: 1fr; }
     .form-row     { grid-template-columns: 1fr; }
     .footer-top   { grid-template-columns: 1fr; gap: 2rem; }
