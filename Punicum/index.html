@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punicum – Fresh Fish Restaurant | Santa Marinella</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="media/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header id="header">
+        <nav class="nav-inner">
+            <div class="nav-left">
+                <a href="#about"   data-i18n="nav.about">About</a>
+                <a href="#menu"    data-i18n="nav.menu">Menu</a>
+                <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+            </div>
+
+            <a href="#hero" class="logo">PUNICUM</a>
+
+            <div class="nav-right">
+                <a href="#contacts" data-i18n="nav.contacts">Contacts</a>
+                <div class="lang-toggle">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <span class="lang-sep">|</span>
+                    <button class="lang-btn" data-lang="it">IT</button>
+                </div>
+                <a href="#booking" class="btn-reserve" data-i18n="nav.reserve">Reserve</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#about"   data-i18n="nav.about">About</a>
+            <a href="#menu"    data-i18n="nav.menu">Menu</a>
+            <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+            <a href="#contacts" data-i18n="nav.contacts">Contacts</a>
+            <div class="mobile-lang">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <span class="lang-sep">|</span>
+                <button class="lang-btn" data-lang="it">IT</button>
+            </div>
+            <a href="#booking" class="btn-reserve" data-i18n="nav.reserve">Reserve</a>
+        </div>
+    </header>
+
+    <!-- HERO SLIDER -->
+    <section id="hero">
+        <div class="slider" id="slider">
+            <div class="slide active" style="background-image:url('media/slide 1.jpg')"></div>
+            <div class="slide"        style="background-image:url('media/slide 2.jpg')"></div>
+            <div class="slide"        style="background-image:url('media/slide 3.jpg')"></div>
+            <div class="slide"        style="background-image:url('media/slide 4.jpg')"></div>
+
+            <div class="slider-overlay">
+                <div class="hero-content">
+                    <p class="hero-sub">Santa Marinella &nbsp;·&nbsp; Lazio &nbsp;·&nbsp; Italy</p>
+                    <h1 data-i18n="hero.title">The Sea,<br>On Your Plate</h1>
+                    <p class="hero-desc" data-i18n="hero.desc">Fresh catch from the Tyrrhenian Sea,<br>served with passion and Italian tradition</p>
+                    <a href="#booking" class="btn-hero" data-i18n="hero.cta">Reserve Your Table</a>
+                </div>
+            </div>
+
+            <button class="slider-btn prev" id="slidePrev" aria-label="Previous slide">&#8249;</button>
+            <button class="slider-btn next" id="slideNext" aria-label="Next slide">&#8250;</button>
+
+            <div class="slider-dots" id="sliderDots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot"        data-index="1"></span>
+                <span class="dot"        data-index="2"></span>
+                <span class="dot"        data-index="3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-label" data-i18n="about.label">Our Story</span>
+                    <h2 data-i18n="about.title">Where the Sea<br>Meets the Table</h2>
+                    <p data-i18n="about.p1">Punicum is a small, passionate restaurant on the promenade of Santa Marinella, where every dish tells the story of the Tyrrhenian Sea. We select our fish daily from local fishermen, ensuring that what reaches your plate is always at its freshest.</p>
+                    <p data-i18n="about.p2">Our kitchen honours the Mediterranean tradition – simple techniques that let the quality of the ingredients shine, prepared with the care and warmth of true Italian hospitality.</p>
+                    <a href="#menu" class="btn-secondary" data-i18n="about.cta">Explore the Menu</a>
+                </div>
+                <div class="about-image">
+                    <img src="media/Punicum front.jpg" alt="Punicum Restaurant front view">
+                    <div class="about-badge">
+                        <span class="badge-rating">4.5</span>
+                        <span class="badge-text" data-i18n="about.badge">Google Rating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote-section">
+        <div class="container">
+            <blockquote data-i18n="quote.text">
+                "Every morning we choose the best of what the sea offers.<br>Every evening you taste it."
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="menu.label">Specialities</span>
+                <h2 data-i18n="menu.title">A Taste of the Tyrrhenian Sea</h2>
+                <p data-i18n="menu.desc">From classic spaghetti alle vongole to whole grilled lobster, our menu celebrates the finest catch of the day.</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-card-img">
+                        <img src="media/lobster spaghetti.jpg" alt="Lobster Spaghetti">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Spaghetti all'Astice</h3>
+                        <p data-i18n="menu.c1.desc">Fresh lobster slow-cooked in a rich pomodorino sauce over artisan spaghetti</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-img">
+                        <img src="media/Vongole.jpg" alt="Spaghetti alle Vongole">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Spaghetti alle Vongole</h3>
+                        <p data-i18n="menu.c2.desc">Our signature dish – local clams, white wine, garlic, and fresh parsley</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-img">
+                        <img src="media/Polpo.jpg" alt="Grilled Octopus">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Polpo alla Griglia</h3>
+                        <p data-i18n="menu.c3.desc">Tender grilled octopus with lemon, olive oil, and fresh garden herbs</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-img">
+                        <img src="media/cozze.jpg" alt="Steamed Mussels">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Cozze al Vapore</h3>
+                        <p data-i18n="menu.c4.desc">Steamed mussels in a fragrant broth of white wine, garlic, and fresh tomato</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-img">
+                        <img src="media/cozze panne.jpg" alt="Mussels au Gratin">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Cozze al Pane</h3>
+                        <p data-i18n="menu.c5.desc">Mussels au gratin with seasoned breadcrumbs, pecorino, and fresh herbs</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-img">
+                        <img src="media/Fritti.jpg" alt="Mixed Seafood Fry">
+                    </div>
+                    <div class="menu-card-body">
+                        <h3>Fritto Misto di Mare</h3>
+                        <p data-i18n="menu.c6.desc">A generous selection of lightly battered and fried seafood, crispy and golden</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="gallery.label">Gallery</span>
+                <h2 data-i18n="gallery.title">Moments at Punicum</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item tall">
+                    <img src="media/Lobster.jpg" alt="Fresh Lobster" loading="lazy">
+                    <div class="gallery-overlay"><span data-i18n="gallery.g1">Fresh Lobster</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="media/Polpo.jpg" alt="Grilled Octopus" loading="lazy">
+                    <div class="gallery-overlay"><span>Polpo alla Griglia</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="media/Vongole.jpg" alt="Spaghetti alle Vongole" loading="lazy">
+                    <div class="gallery-overlay"><span>Spaghetti alle Vongole</span></div>
+                </div>
+                <div class="gallery-item wide">
+                    <img src="media/lobster spaghetti.jpg" alt="Lobster Spaghetti" loading="lazy">
+                    <div class="gallery-overlay"><span>Spaghetti all'Astice</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="media/cozze.jpg" alt="Mussels" loading="lazy">
+                    <div class="gallery-overlay"><span>Cozze al Vapore</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="media/Fritti.jpg" alt="Fritto Misto" loading="lazy">
+                    <div class="gallery-overlay"><span>Fritto Misto di Mare</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="booking" class="section section-dark">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-label" data-i18n="booking.label">Reservations</span>
+                <h2 data-i18n="booking.title">Reserve Your Table</h2>
+                <p data-i18n="booking.desc">We look forward to welcoming you. Fill in the form and we'll confirm your reservation as soon as possible.</p>
+            </div>
+
+            <form id="booking-form" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name" data-i18n="form.name.label">Full Name *</label>
+                        <input type="text" id="name" name="name" required data-i18n-ph="form.name.ph" placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="form.email.label">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone" data-i18n="form.phone.label">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+39 ...">
+                    </div>
+                    <div class="form-group">
+                        <label for="guests" data-i18n="form.guests.label">Guests *</label>
+                        <select id="guests" name="guests" required>
+                            <option value="" data-i18n="form.guests.default">Number of guests</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7+" data-i18n="form.guests.more">7 or more</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date" data-i18n="form.date.label">Date *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time" data-i18n="form.time.label">Preferred Time *</label>
+                        <select id="time" name="time" required>
+                            <option value="" data-i18n="form.time.default">Select time</option>
+                            <optgroup data-i18n-label="form.time.lunch" label="Lunch">
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                            </optgroup>
+                            <optgroup data-i18n-label="form.time.dinner" label="Dinner (Fri &amp; Sat only)">
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="notes" data-i18n="form.notes.label">Special Requests</label>
+                    <textarea id="notes" name="notes" rows="4" data-i18n-ph="form.notes.ph" placeholder="Allergies, special occasions, seating preferences..."></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="btn-submit" data-i18n="form.submit">Send Reservation Request</button>
+                </div>
+            </form>
+
+            <div id="form-success" class="form-success hidden">
+                <div class="success-icon">&#10003;</div>
+                <h3 data-i18n="success.title">Reservation Request Sent!</h3>
+                <p data-i18n="success.desc">Thank you! We'll confirm your table at Punicum as soon as possible.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section id="contacts" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-i18n="contacts.label">Visit Us</span>
+                <h2 data-i18n="contacts.title">Find Punicum</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-block">
+                    <div class="contact-icon">&#128205;</div>
+                    <h3 data-i18n="contacts.addr.title">Address</h3>
+                    <p>Via Punico, 1/3<br>Santa Marinella, RM<br>Lazio, Italy</p>
+                    <a href="https://maps.google.com/?q=Punicum+Santa+Marinella" target="_blank" rel="noopener" class="map-link" data-i18n="contacts.map">Open in Google Maps &rarr;</a>
+                </div>
+                <div class="contact-block">
+                    <div class="contact-icon">&#128222;</div>
+                    <h3 data-i18n="contacts.ct.title">Phone &amp; Email</h3>
+                    <p><a href="tel:+393463716437">+39 346 371 6437</a></p>
+                    <p><a href="mailto:g.khved@gmail.com">info@punicum.it</a></p>
+                </div>
+                <div class="contact-block">
+                    <div class="contact-icon">&#128336;</div>
+                    <h3 data-i18n="contacts.hrs.title">Opening Hours</h3>
+                    <ul class="hours-list">
+                        <li>
+                            <span data-i18n="hours.mon">Monday</span>
+                            <span class="closed" data-i18n="hours.closed">Closed</span>
+                        </li>
+                        <li>
+                            <span data-i18n="hours.tuethu">Tue &ndash; Thu</span>
+                            <span>12:00 &ndash; 15:00</span>
+                        </li>
+                        <li>
+                            <span data-i18n="hours.fri">Friday</span>
+                            <span>12:00 &ndash; 15:00 &amp; 19:00 &ndash; 22:00</span>
+                        </li>
+                        <li>
+                            <span data-i18n="hours.sat">Saturday</span>
+                            <span>9:00 &ndash; 15:30 &amp; 19:00 &ndash; 22:00</span>
+                        </li>
+                        <li>
+                            <span data-i18n="hours.sun">Sunday</span>
+                            <span>12:00 &ndash; 15:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="map-embed">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1484.8559!2d11.8497382!3d42.0320572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1328a5e4665e6b2d%3A0x3be8d01eee9ab43b!2sPunicum!5e0!3m2!1sen!2sit!4v1713000000000!5m2!1sen!2sit"
+                    width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Punicum on Google Maps">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">PUNICUM</div>
+                    <p data-i18n="footer.desc">Fresh fish restaurant on the promenade<br>of Santa Marinella, Lazio, Italy</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="#about"    data-i18n="nav.about">About</a>
+                    <a href="#menu"     data-i18n="nav.menu">Menu</a>
+                    <a href="#gallery"  data-i18n="nav.gallery">Gallery</a>
+                    <a href="#booking"  data-i18n="nav.reserve">Reserve</a>
+                    <a href="#contacts" data-i18n="nav.contacts">Contacts</a>
+                </div>
+                <div class="footer-contact">
+                    <p>Via Punico, 1/3, Santa Marinella</p>
+                    <p><a href="tel:+393463716437">+39 346 371 6437</a></p>
+                    <p data-i18n="footer.hours">Mon: Closed &nbsp;|&nbsp; Tue&ndash;Sun: Lunch from 12:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.bottom">&copy; 2025 Punicum &middot; Fresh Fish Restaurant &middot; Santa Marinella &middot; All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
