@@ -256,15 +256,20 @@ function initLangToggle() {
 
 /* ── MOBILE MENU ────────────────────────────────────────── */
 (function () {
-    const hamburger  = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburger = document.getElementById('hamburger');
+    const header    = document.getElementById('header');
+    const navLeft   = document.querySelector('.nav-left');
 
     hamburger.addEventListener('click', () => {
-        mobileMenu.classList.toggle('open');
+        header.classList.toggle('open');
     });
 
-    mobileMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    navLeft.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => header.classList.remove('open'));
+    });
+
+    document.addEventListener('click', e => {
+        if (!header.contains(e.target)) header.classList.remove('open');
     });
 })();
 
