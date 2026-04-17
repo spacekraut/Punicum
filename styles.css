@@ -840,7 +840,9 @@ textarea { resize: vertical; min-height: 110px; }
 }
 
 @media (max-width: 768px) {
-    #header { display: none; }
+    .nav-left, .nav-right, .logo { display: none; }
+    .hamburger { display: flex; }
+    .mobile-menu { display: flex; }
 
     .about-grid      { grid-template-columns: 1fr; }
     .about-image img { height: 320px; }
