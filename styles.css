@@ -845,24 +845,76 @@ textarea { resize: vertical; min-height: 110px; }
     .mobile-menu { display: flex; }
     .logo { position: static; transform: none; }
 
-    .about-grid    { grid-template-columns: 1fr; }
+    .about-grid      { grid-template-columns: 1fr; }
     .about-image img { height: 320px; }
-    .about-badge   { left: .5rem; bottom: .5rem; }
+    .about-badge     { left: .5rem; bottom: .5rem; }
 
-    .menu-grid      { grid-template-columns: 1fr; }
-    .gallery-grid   { grid-template-columns: 1fr 1fr; }
-    .contact-grid   { grid-template-columns: 1fr; }
-    .form-row       { grid-template-columns: 1fr; }
-    .footer-top     { grid-template-columns: 1fr; gap: 2rem; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .form-row     { grid-template-columns: 1fr; }
+    .footer-top   { grid-template-columns: 1fr; gap: 2rem; }
 
     .slider-btn.prev { left: 1rem; }
     .slider-btn.next { right: 1rem; }
 
     .section { padding: 4rem 0; }
+
+    /* ── Swipeable carousels ── */
+    #menu .container,
+    #gallery .container {
+        padding-left: 0;
+        padding-right: 0;
+        overflow: visible;
+    }
+
+    #menu .section-header,
+    #gallery .section-header {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .menu-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 1rem;
+        padding: 0.5rem 1.5rem 1.5rem;
+    }
+    .menu-grid::-webkit-scrollbar { display: none; }
+
+    .menu-card {
+        flex: 0 0 78vw;
+        scroll-snap-align: start;
+        /* keep hover lift for tap feedback */
+    }
+
+    .gallery-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 1rem;
+        padding: 0.5rem 1.5rem 1.5rem;
+    }
+    .gallery-grid::-webkit-scrollbar { display: none; }
+
+    .gallery-item,
+    .gallery-item.tall,
+    .gallery-item.wide {
+        flex: 0 0 75vw;
+        height: 240px;
+        grid-row: unset;
+        grid-column: unset;
+        scroll-snap-align: start;
+    }
 }
 
 @media (max-width: 480px) {
-    .gallery-grid { grid-template-columns: 1fr; }
-    .gallery-item { height: 220px; }
+    .menu-card   { flex: 0 0 85vw; }
+    .gallery-item,
+    .gallery-item.tall,
+    .gallery-item.wide { flex: 0 0 85vw; height: 210px; }
     h1 { font-size: 2.2rem; }
 }
