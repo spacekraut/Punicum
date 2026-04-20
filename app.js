@@ -329,32 +329,23 @@ function initLangToggle() {
         const time   = document.getElementById('time').value;
         const notes  = document.getElementById('notes').value.trim();
 
-        const subject = encodeURIComponent(`Reservation Request – ${name} – ${date} at ${time}`);
-        const body = encodeURIComponent(
-`New reservation request from the Punicum website:
+        const submitBtn = form.querySelector('.btn-submit');
+        submitBtn.disabled = true;
 
-Name:    ${name}
-Email:   ${email}
-Phone:   ${phone || 'Not provided'}
-Guests:  ${guests}
-Date:    ${date}
-Time:    ${time}
-Notes:   ${notes || 'None'}
-
----
-Sent from punicum.it reservation form`
-        );
-
-        const a = document.createElement('a');
-        a.href = `mailto:g.khved@gmail.com?subject=${subject}&body=${body}`;
-        a.style.display = 'none';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-
-        form.style.display = 'none';
-        success.classList.remove('hidden');
-        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        fetch('https://formspree.io/f/mbdqkpvn', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: new URLSearchParams({ name, email, phone, guests, date, time, notes })
+        })
+        .then(res => {
+            if (!res.ok) throw new Error('Network response was not ok');
+            form.style.display = 'none';
+            success.classList.remove('hidden');
+            success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        })
+        .catch(() => {
+            submitBtn.disabled = false;
+        });
     });
 })();
 
