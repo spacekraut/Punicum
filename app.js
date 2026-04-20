@@ -7,9 +7,10 @@ const translations = {
         'nav.contacts': 'Contacts',
         'nav.reserve':  'Reserve',
 
-        'hero.title': 'The Sea,<br>On Your Plate',
-        'hero.desc':  'Fresh catch from the Tyrrhenian Sea,<br>served with passion and Italian tradition',
-        'hero.cta':   'Reserve Your Table',
+        'hero.title':    'The Sea,<br>On Your Plate',
+        'hero.desc':     'Fresh catch from the Tyrrhenian Sea,<br>served with passion and Italian tradition',
+        'hero.cta':      'Reserve Your Table',
+        'hero.whatsapp': 'WhatsApp Us',
 
         'about.label': 'Our Story',
         'about.title': 'Where the Sea<br>Meets the Table',
@@ -83,9 +84,10 @@ const translations = {
         'nav.contacts': 'Contatti',
         'nav.reserve':  'Prenota',
 
-        'hero.title': 'Il Mare,<br>nel Piatto',
-        'hero.desc':  'Pesce fresco dal Mar Tirreno,<br>servito con passione e tradizione italiana',
-        'hero.cta':   'Prenota un Tavolo',
+        'hero.title':    'Il Mare,<br>nel Piatto',
+        'hero.desc':     'Pesce fresco dal Mar Tirreno,<br>servito con passione e tradizione italiana',
+        'hero.cta':      'Prenota un Tavolo',
+        'hero.whatsapp': 'Scrivici su WhatsApp',
 
         'about.label': 'La Nostra Storia',
         'about.title': 'Dove il Mare<br>Incontra la Tavola',
