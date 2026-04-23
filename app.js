@@ -24,20 +24,20 @@ const translations = {
         'menu.label': 'Specialities',
         'menu.title': 'A Taste of the Tyrrhenian Sea',
         'menu.desc':  'From classic spaghetti alle vongole to whole grilled lobster, our menu celebrates the finest catch of the day.',
-        'menu.c1.desc': 'Fresh lobster slow-cooked in a rich pomodorino sauce over artisan spaghetti',
+        'menu.c1.desc': 'Spider crab with crustacean bisque and tomato',
         'menu.c2.desc': 'Our signature dish – local clams, white wine, garlic, and fresh parsley',
         'menu.c3.desc': 'Tender grilled octopus with lemon, olive oil, and fresh garden herbs',
-        'menu.c4.desc': 'Steamed mussels in a fragrant broth of white wine, garlic, and fresh tomato',
+        'menu.c4.desc': 'Fresh egg pasta with cuttlefish, squid, prawns, mussels, clams, and tomato',
         'menu.c5.desc': 'Mussels au gratin with seasoned breadcrumbs, pecorino, and fresh herbs',
         'menu.c6.desc': 'A generous selection of lightly battered and fried seafood, crispy and golden',
 
         'gallery.label': 'Gallery',
         'gallery.title': 'Moments at Punicum',
-        'gallery.g1':    'Fresh Lobster',
+        'gallery.g1':    'Astice alla Catalana',
 
         'booking.label': 'Reservations',
         'booking.title': 'Reserve Your Table',
-        'booking.desc':  "We look forward to welcoming you. Fill in the form and we'll confirm your reservation as soon as possible.",
+        'booking.desc':  "We look forward to welcoming you. Write to us on WhatsApp and we'll confirm your reservation as soon as possible.",
 
         'form.name.label':    'Full Name *',
         'form.name.ph':       'Your full name',
@@ -67,13 +67,14 @@ const translations = {
 
         'hours.mon':    'Monday',
         'hours.closed': 'Closed',
+        'hours.open':   'Open',
         'hours.tuethu': 'Tue \u2013 Thu',
         'hours.fri':    'Friday',
         'hours.sat':    'Saturday',
         'hours.sun':    'Sunday',
 
         'footer.desc':   'Fresh fish restaurant on the promenade<br>of Santa Marinella, Lazio, Italy',
-        'footer.hours':  'Mon: Closed &nbsp;|&nbsp; Tue&ndash;Sun: Lunch from 12:00',
+        'footer.hours':  'Mon: Closed &nbsp;|&nbsp; Tue&ndash;Sun: Open',
         'footer.bottom': '&copy; 2025 Punicum &middot; Fresh Fish Restaurant &middot; Santa Marinella &middot; All rights reserved',
     },
 
@@ -101,20 +102,20 @@ const translations = {
         'menu.label': 'Specialità',
         'menu.title': 'Un Assaggio del Mar Tirreno',
         'menu.desc':  'Dagli spaghetti alle vongole all\'astice intero alla griglia, il nostro menu celebra il pescato del giorno.',
-        'menu.c1.desc': 'Astice fresco cotto lentamente in un ricco sugo di pomodorini su spaghetti artigianali',
-        'menu.c2.desc': 'Il nostro piatto signature – vongole locali, vino bianco, aglio e prezzemolo fresco',
+        'menu.c1.desc': 'Granseola con bisque di crostacei e pomodoro',
+        'menu.c2.desc': 'vongole, vino bianco, aglio e prezzemolo fresco',
         'menu.c3.desc': 'Polpo tenero alla griglia con limone, olio extravergine e erbe fresche dell\'orto',
-        'menu.c4.desc': 'Cozze al vapore in un profumato brodo di vino bianco, aglio e pomodoro fresco',
+        'menu.c4.desc': 'Pasta all\'uovo con seppia, calamaro, gamberi, cozze, vongole e pomodoro',
         'menu.c5.desc': 'Cozze gratinate con pangrattato aromatico, pecorino ed erbe fresche',
         'menu.c6.desc': 'Una generosa selezione di frutti di mare in leggera pastella, croccanti e dorati',
 
         'gallery.label': 'Galleria',
         'gallery.title': 'Momenti a Punicum',
-        'gallery.g1':    'Astice Fresco',
+        'gallery.g1':    'Astice alla Catalana',
 
         'booking.label': 'Prenotazioni',
         'booking.title': 'Prenota il Tuo Tavolo',
-        'booking.desc':  'Non vediamo l\'ora di accogliervi. Compila il modulo e confermeremo la tua prenotazione il prima possibile.',
+        'booking.desc':  'Non vediamo l\'ora di accogliervi. Scrivici su WhatsApp e confermeremo la tua prenotazione il prima possibile.',
 
         'form.name.label':    'Nome e Cognome *',
         'form.name.ph':       'Il tuo nome completo',
@@ -144,19 +145,20 @@ const translations = {
 
         'hours.mon':    'Luned\u00ec',
         'hours.closed': 'Chiuso',
+        'hours.open':   'Aperto',
         'hours.tuethu': 'Mar \u2013 Gio',
         'hours.fri':    'Venerd\u00ec',
         'hours.sat':    'Sabato',
         'hours.sun':    'Domenica',
 
         'footer.desc':   'Ristorante di pesce fresco sul lungomare<br>di Santa Marinella, Lazio, Italia',
-        'footer.hours':  'Lun: Chiuso &nbsp;|&nbsp; Mar&ndash;Dom: Pranzo dalle 12:00',
+        'footer.hours':  'Lun: Chiuso &nbsp;|&nbsp; Mar&ndash;Dom: Aperto',
         'footer.bottom': '&copy; 2025 Punicum &middot; Ristorante di Pesce Fresco &middot; Santa Marinella &middot; Tutti i diritti riservati',
     }
 };
 
 /* ── LANGUAGE SYSTEM ────────────────────────────────────── */
-let currentLang = localStorage.getItem('punicum-lang') || 'en';
+let currentLang = localStorage.getItem('punicum-lang') || 'it';
 
 function applyLanguage(lang) {
     currentLang = lang;
@@ -302,54 +304,6 @@ function initLangToggle() {
 })();
 
 
-/* ── BOOKING FORM ───────────────────────────────────────── */
-(function () {
-    const form    = document.getElementById('booking-form');
-    const success = document.getElementById('form-success');
-
-    const dateInput = document.getElementById('date');
-    if (dateInput) dateInput.min = new Date().toISOString().split('T')[0];
-
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        if (!form.checkValidity()) {
-            form.querySelectorAll('input,select,textarea').forEach(field => {
-                if (!field.validity.valid) {
-                    field.style.borderColor = '#e74c3c';
-                    field.addEventListener('input', () => { field.style.borderColor = ''; }, { once: true });
-                }
-            });
-            return;
-        }
-
-        const name   = document.getElementById('name').value.trim();
-        const email  = document.getElementById('email').value.trim();
-        const phone  = document.getElementById('phone').value.trim();
-        const guests = document.getElementById('guests').value;
-        const date   = document.getElementById('date').value;
-        const time   = document.getElementById('time').value;
-        const notes  = document.getElementById('notes').value.trim();
-
-        const submitBtn = form.querySelector('.btn-submit');
-        submitBtn.disabled = true;
-
-        fetch('https://formspree.io/f/mbdqkpvn', {
-            method: 'POST',
-            headers: { 'Accept': 'application/json' },
-            body: new URLSearchParams({ name, email, phone, guests, date, time, notes })
-        })
-        .then(res => {
-            if (!res.ok) throw new Error('Network response was not ok');
-            form.style.display = 'none';
-            success.classList.remove('hidden');
-            success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        })
-        .catch(() => {
-            submitBtn.disabled = false;
-        });
-    });
-})();
 
 
 /* ── SMOOTH SCROLL (fixed header offset) ────────────────── */

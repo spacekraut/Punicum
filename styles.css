@@ -88,17 +88,6 @@ p  { line-height: 1.75; color: var(--text-l); }
 }
 .btn-hero:hover { background: transparent; color: var(--gold); }
 
-.btn-whatsapp {
-    display: flex;
-    align-items: center;
-    transition: opacity var(--transition), transform var(--transition);
-}
-.btn-whatsapp img {
-    display: block;
-    height: 2.875rem;
-    width: auto;
-}
-.btn-whatsapp:hover { opacity: .8; transform: translateY(-2px); }
 
 .btn-secondary {
     display: inline-block;
@@ -588,13 +577,19 @@ select option { background: var(--navy-d); color: var(--white); }
 
 textarea { resize: vertical; min-height: 110px; }
 
-.form-submit {
+.booking-whatsapp {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: .75rem;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
+
+.btn-whatsapp-cta img {
+    height: 3.5rem;
+    width: auto;
+    display: block;
+    transition: opacity var(--transition), transform var(--transition);
+}
+.btn-whatsapp-cta:hover img { opacity: .8; transform: translateY(-2px); }
 
 .form-success {
     text-align: center;
