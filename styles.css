@@ -747,6 +747,8 @@ textarea { resize: vertical; min-height: 110px; }
     font-weight: 700;
     letter-spacing: .08em;
     font-size: .78rem;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .mgmt-mgmt {
