@@ -740,6 +740,8 @@ textarea { resize: vertical; min-height: 110px; }
     letter-spacing: .05em;
 }
 
+.footer-bottom p + p { margin-top: .5rem; }
+
 .footer-credit { margin-top: .5rem; }
 
 .mgmt-link {

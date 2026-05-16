@@ -76,7 +76,8 @@ const translations = {
 
         'footer.desc':   'Fresh fish restaurant on the promenade<br>of Santa Marinella, Lazio, Italy',
         'footer.hours':  'Mon: Closed &nbsp;|&nbsp; Tue&ndash;Sun: Open',
-        'footer.bottom':  '&copy; 2026 Punicum &middot; Fresh Fish Restaurant &middot; Santa Marinella &middot; All rights reserved',
+        'footer.bottom':  '&copy; 2026 Punicum &middot; Fresh Fish Restaurant &middot; Santa Marinella',
+        'footer.legal':   'PUNICUM S.R.L - P.IVA/C.F. 17144451006 - REA RM 1698804',
         'footer.credit':  'Built by',
     },
 
@@ -156,7 +157,8 @@ const translations = {
 
         'footer.desc':   'Ristorante di pesce fresco sul lungomare<br>di Santa Marinella, Lazio, Italia',
         'footer.hours':  'Lun: Chiuso &nbsp;|&nbsp; Mar&ndash;Dom: Aperto',
-        'footer.bottom':  '&copy; 2026 Punicum &middot; Ristorante di Pesce Fresco &middot; Santa Marinella &middot; Tutti i diritti riservati',
+        'footer.bottom':  '&copy; 2026 Punicum &middot; Ristorante di Pesce Fresco &middot; Santa Marinella',
+        'footer.legal':   'PUNICUM S.R.L - P.IVA/C.F. 17144451006 - REA RM 1698804',
         'footer.credit':  'Realizzato da',
     }
 };
