@@ -1,29 +1,34 @@
 /* ── TRANSLATIONS ───────────────────────────────────────── */
 const translations = {
     en: {
-        'nav.about':    'About',
-        'nav.menu':     'Menu',
-        'nav.gallery':  'Gallery',
+        'nav.about': 'About',
+        'nav.menu': 'Menu',
+        'nav.gallery': 'Gallery',
         'nav.contacts': 'Contacts',
-        'nav.reserve':  'Reserve',
+        'nav.reserve': 'Reserve',
 
-        'hero.title':    'The Sea,<br>On Your Plate',
-        'hero.desc':     'Fresh catch from the Tyrrhenian Sea,<br>served with passion and Italian tradition',
-        'hero.cta':      'Reserve Your Table',
+        'hero.title': 'The Sea,<br>On Your Plate',
+        'hero.desc': 'Fresh catch from the Tyrrhenian Sea,<br>served with passion and Italian tradition',
+        'hero.cta': 'Reserve Your Table',
         'hero.whatsapp': 'WhatsApp Us',
 
         'about.label': 'Our Story',
         'about.title': 'Where the Sea<br>Meets the Table',
-        'about.p1':    'Punicum is a small, passionate restaurant on the promenade of Santa Marinella, where every dish tells the story of the Tyrrhenian Sea. We select our fish daily from local fishermen, ensuring that what reaches your plate is always at its freshest.',
-        'about.p2':    'Our kitchen honours the Mediterranean tradition – simple techniques that let the quality of the ingredients shine, prepared with the care and warmth of true Italian hospitality.',
-        'about.cta':   'Explore the Menu',
+        'about.p1': 'Punicum is a small, passionate restaurant on the promenade of Santa Marinella, where every dish tells the story of the Tyrrhenian Sea. We select our fish daily from local fishermen, ensuring that what reaches your plate is always at its freshest.',
+        'about.p2': 'Our kitchen honours the Mediterranean tradition – simple techniques that let the quality of the ingredients shine, prepared with the care and warmth of true Italian hospitality.',
+        'about.cta': 'Explore the Menu',
         'about.badge': 'Google Rating',
 
         'quote.text': '"Every morning we choose the best of what the sea offers.<br>Every evening you taste it."',
 
+        'press.label': 'In the Press',
+        'press.title': 'A Story of Sea, History and Taste',
+        'press.text': 'A portrait of Punicum that explores the ancient roots of Santa Marinella, the beauty of the coastline, and the culinary identity of a restaurant shaped by history, passion and the sea.',
+        'press.cta': 'Read the Article',
+
         'menu.label': 'Specialities',
         'menu.title': 'A Taste of the Tyrrhenian Sea',
-        'menu.desc':  'From classic spaghetti alle vongole to whole grilled lobster, our menu celebrates the finest catch of the day.',
+        'menu.desc': 'From classic spaghetti alle vongole to whole grilled lobster, our menu celebrates the finest catch of the day.',
         'menu.c1.desc': 'Spider crab with crustacean bisque and tomato',
         'menu.c2.desc': 'Our signature dish – local clams, white wine, garlic, and fresh parsley',
         'menu.c3.desc': 'Tender grilled octopus with lemon, olive oil, and fresh garden herbs',
@@ -33,78 +38,79 @@ const translations = {
 
         'gallery.label': 'Gallery',
         'gallery.title': 'Moments at Punicum',
-        'gallery.g1':    'Astice alla Catalana',
+        'gallery.g1': 'Astice alla Catalana',
 
         'booking.label': 'Reservations',
         'booking.title': 'Reserve Your Table',
-        'booking.desc':  "We look forward to welcoming you. Write to us on WhatsApp and we'll confirm your reservation as soon as possible.",
+        'booking.desc': "We look forward to welcoming you. Write to us on WhatsApp and we'll confirm your reservation as soon as possible.",
 
-        'form.name.label':    'Full Name *',
-        'form.name.ph':       'Your full name',
-        'form.email.label':   'Email *',
-        'form.phone.label':   'Phone',
-        'form.guests.label':  'Guests *',
-        'form.guests.default':'Number of guests',
-        'form.guests.more':   '7 or more',
-        'form.date.label':    'Date *',
-        'form.time.label':    'Preferred Time *',
-        'form.time.default':  'Select time',
-        'form.time.lunch':    'Lunch',
-        'form.time.dinner':   'Dinner (Fri & Sat only)',
-        'form.notes.label':   'Special Requests',
-        'form.notes.ph':      'Allergies, special occasions, seating preferences...',
-        'form.submit':        'Send Reservation Request',
+        'form.name.label': 'Full Name *',
+        'form.name.ph': 'Your full name',
+        'form.email.label': 'Email *',
+        'form.phone.label': 'Phone',
+        'form.guests.label': 'Guests *',
+        'form.guests.default': 'Number of guests',
+        'form.guests.more': '7 or more',
+        'form.date.label': 'Date *',
+        'form.time.label': 'Preferred Time *',
+        'form.time.default': 'Select time',
+        'form.time.lunch': 'Lunch',
+        'form.time.dinner': 'Dinner (Saturday only)',
+        'form.notes.label': 'Special Requests',
+        'form.notes.ph': 'Allergies, special occasions, seating preferences...',
+        'form.submit': 'Send Reservation Request',
 
         'success.title': 'Reservation Request Sent!',
-        'success.desc':  "Thank you! We'll confirm your table at Punicum as soon as possible.",
+        'success.desc': "Thank you! We'll confirm your table at Punicum as soon as possible.",
 
-        'contacts.label':      'Visit Us',
-        'contacts.title':      'Find Punicum',
+        'contacts.label': 'Visit Us',
+        'contacts.title': 'Find Punicum',
         'contacts.addr.title': 'Address',
-        'contacts.map':        'Open in Google Maps \u2192',
-        'contacts.ct.title':   'Phone &amp; Email',
-        'contacts.hrs.title':  'Opening Hours',
+        'contacts.map': 'Open in Google Maps \u2192',
+        'contacts.ct.title': 'Phone &amp; Email',
+        'contacts.hrs.title': 'Opening Hours',
 
-        'hours.mon':     'Monday',
-        'hours.closed':  'Closed',
-        'hours.open':    'Open',
-        'hours.tuethu':  'Tue \u2013 Sun',
-        'hours.fri':     'Friday',
-        'hours.sat':     'Saturday',
-        'hours.sun':     'Sunday',
-        'hours.summary': 'Monday closed, Tuesday\u2013Sunday open',
+        'hours.daily': 'Every day',
+        'hours.lunch': '12:00&ndash;15:30',
+        'hours.sat': 'Saturday',
+        'hours.dinner': '19:00&ndash;22:00',
 
-        'footer.desc':   'Fresh fish restaurant on the promenade<br>of Santa Marinella, Lazio, Italy',
-        'footer.hours':  'Mon: Closed &nbsp;|&nbsp; Tue&ndash;Sun: Open',
-        'footer.bottom':  '&copy; 2026 Punicum &middot; Fresh Fish Restaurant &middot; Santa Marinella',
-        'footer.legal':   'PUNICUM S.R.L - P.IVA/C.F. 17144451006 - REA RM 1698804',
-        'footer.credit':  'Built by',
+        'footer.desc': 'Fresh fish restaurant on the promenade<br>of Santa Marinella, Lazio, Italy',
+        'footer.hours': 'Every day: 12:00&ndash;15:30 &nbsp;|&nbsp; Saturday: 19:00&ndash;22:00',
+        'footer.bottom': '&copy; 2026 Punicum &middot; Fresh Fish Restaurant &middot; Santa Marinella',
+        'footer.legal': 'PUNICUM S.R.L - P.IVA/C.F. 17144451006 - REA RM 1698804',
+        'footer.credit': 'Built by',
     },
 
     it: {
-        'nav.about':    'Chi Siamo',
-        'nav.menu':     'Menu',
-        'nav.gallery':  'Galleria',
+        'nav.about': 'Chi Siamo',
+        'nav.menu': 'Menu',
+        'nav.gallery': 'Galleria',
         'nav.contacts': 'Contatti',
-        'nav.reserve':  'Prenota',
+        'nav.reserve': 'Prenota',
 
-        'hero.title':    'Il Mare,<br>nel Piatto',
-        'hero.desc':     'Pesce fresco dal Mar Tirreno,<br>servito con passione e tradizione italiana',
-        'hero.cta':      'Prenota un Tavolo',
+        'hero.title': 'Il Mare,<br>nel Piatto',
+        'hero.desc': 'Pesce fresco dal Mar Tirreno,<br>servito con passione e tradizione italiana',
+        'hero.cta': 'Prenota un Tavolo',
         'hero.whatsapp': 'Scrivici su WhatsApp',
 
         'about.label': 'La Nostra Storia',
         'about.title': 'Dove il Mare<br>Incontra la Tavola',
-        'about.p1':    'Punicum è un piccolo, appassionato ristorante sul lungomare di Santa Marinella, dove ogni piatto racconta la storia del Mar Tirreno. Selezioniamo il pesce ogni giorno dai pescatori locali, garantendo che ciò che raggiunge il tuo piatto sia sempre freschissimo.',
-        'about.p2':    'La nostra cucina onora la tradizione mediterranea – tecniche semplici che esaltano la qualità degli ingredienti, preparati con la cura e il calore della vera ospitalità italiana.',
-        'about.cta':   'Esplora il Menu',
+        'about.p1': 'Punicum è un piccolo, appassionato ristorante sul lungomare di Santa Marinella, dove ogni piatto racconta la storia del Mar Tirreno. Selezioniamo il pesce ogni giorno dai pescatori locali, garantendo che ciò che raggiunge il tuo piatto sia sempre freschissimo.',
+        'about.p2': 'La nostra cucina onora la tradizione mediterranea – tecniche semplici che esaltano la qualità degli ingredienti, preparati con la cura e il calore della vera ospitalità italiana.',
+        'about.cta': 'Esplora il Menu',
         'about.badge': 'Valutazione Google',
 
         'quote.text': '"Ogni mattina scegliamo il meglio di ciò che il mare offre.<br>Ogni sera lo assaporate."',
 
+        'press.label': 'Nella Stampa',
+        'press.title': 'Una Storia di Mare, Storia e Gusto',
+        'press.text': 'Un ritratto di Punicum che esplora le radici antiche di Santa Marinella, la bellezza della costa e l’identità culinaria di un ristorante nato tra storia, passione e mare.',
+        'press.cta': 'Leggi l’Articolo',
+
         'menu.label': 'Specialità',
         'menu.title': 'Un Assaggio del Mar Tirreno',
-        'menu.desc':  'Dagli spaghetti alle vongole all\'astice intero alla griglia, il nostro menu celebra il pescato del giorno.',
+        'menu.desc': 'Dagli spaghetti alle vongole all\'astice intero alla griglia, il nostro menu celebra il pescato del giorno.',
         'menu.c1.desc': 'Granseola con bisque di crostacei e pomodoro',
         'menu.c2.desc': 'vongole, vino bianco, aglio e prezzemolo fresco',
         'menu.c3.desc': 'Polpo tenero alla griglia con limone, olio extravergine e erbe fresche dell\'orto',
@@ -114,52 +120,48 @@ const translations = {
 
         'gallery.label': 'Galleria',
         'gallery.title': 'Momenti a Punicum',
-        'gallery.g1':    'Astice alla Catalana',
+        'gallery.g1': 'Astice alla Catalana',
 
         'booking.label': 'Prenotazioni',
         'booking.title': 'Prenota il Tuo Tavolo',
-        'booking.desc':  'Non vediamo l\'ora di accogliervi. Scrivici su WhatsApp e confermeremo la tua prenotazione il prima possibile.',
+        'booking.desc': 'Non vediamo l\'ora di accogliervi. Scrivici su WhatsApp e confermeremo la tua prenotazione il prima possibile.',
 
-        'form.name.label':    'Nome e Cognome *',
-        'form.name.ph':       'Il tuo nome completo',
-        'form.email.label':   'Email *',
-        'form.phone.label':   'Telefono',
-        'form.guests.label':  'Ospiti *',
-        'form.guests.default':'Numero di ospiti',
-        'form.guests.more':   '7 o più',
-        'form.date.label':    'Data *',
-        'form.time.label':    'Orario Preferito *',
-        'form.time.default':  'Seleziona orario',
-        'form.time.lunch':    'Pranzo',
-        'form.time.dinner':   'Cena (solo Ven & Sab)',
-        'form.notes.label':   'Richieste Speciali',
-        'form.notes.ph':      'Allergie, occasioni speciali, preferenze di posto...',
-        'form.submit':        'Invia Richiesta di Prenotazione',
+        'form.name.label': 'Nome e Cognome *',
+        'form.name.ph': 'Il tuo nome completo',
+        'form.email.label': 'Email *',
+        'form.phone.label': 'Telefono',
+        'form.guests.label': 'Ospiti *',
+        'form.guests.default': 'Numero di ospiti',
+        'form.guests.more': '7 o più',
+        'form.date.label': 'Data *',
+        'form.time.label': 'Orario Preferito *',
+        'form.time.default': 'Seleziona orario',
+        'form.time.lunch': 'Pranzo',
+        'form.time.dinner': 'Cena (solo il sabato)',
+        'form.notes.label': 'Richieste Speciali',
+        'form.notes.ph': 'Allergie, occasioni speciali, preferenze di posto...',
+        'form.submit': 'Invia Richiesta di Prenotazione',
 
         'success.title': 'Richiesta Inviata!',
-        'success.desc':  'Grazie! Confermeremo il tuo tavolo da Punicum il prima possibile.',
+        'success.desc': 'Grazie! Confermeremo il tuo tavolo da Punicum il prima possibile.',
 
-        'contacts.label':      'Vieni a Trovarci',
-        'contacts.title':      'Trova Punicum',
+        'contacts.label': 'Vieni a Trovarci',
+        'contacts.title': 'Trova Punicum',
         'contacts.addr.title': 'Indirizzo',
-        'contacts.map':        'Apri su Google Maps \u2192',
-        'contacts.ct.title':   'Telefono &amp; Email',
-        'contacts.hrs.title':  'Orari di Apertura',
+        'contacts.map': 'Apri su Google Maps \u2192',
+        'contacts.ct.title': 'Telefono &amp; Email',
+        'contacts.hrs.title': 'Orari di Apertura',
 
-        'hours.mon':     'Luned\u00ec',
-        'hours.closed':  'Chiuso',
-        'hours.open':    'Aperto',
-        'hours.tuethu':  'Mar \u2013 Dom',
-        'hours.fri':     'Venerd\u00ec',
-        'hours.sat':     'Sabato',
-        'hours.sun':     'Domenica',
-        'hours.summary': 'Luned\u00ec chiuso, Marted\u00ec\u2013Domenica aperto',
+        'hours.daily': 'Tutti i giorni',
+        'hours.lunch': '12:00&ndash;15:30',
+        'hours.sat': 'Sabato',
+        'hours.dinner': '19:00&ndash;22:00',
 
-        'footer.desc':   'Ristorante di pesce fresco sul lungomare<br>di Santa Marinella, Lazio, Italia',
-        'footer.hours':  'Lun: Chiuso &nbsp;|&nbsp; Mar&ndash;Dom: Aperto',
-        'footer.bottom':  '&copy; 2026 Punicum &middot; Ristorante di Pesce Fresco &middot; Santa Marinella',
-        'footer.legal':   'PUNICUM S.R.L - P.IVA/C.F. 17144451006 - REA RM 1698804',
-        'footer.credit':  'Realizzato da',
+        'footer.desc': 'Ristorante di pesce fresco sul lungomare<br>di Santa Marinella, Lazio, Italia',
+        'footer.hours': 'Tutti i giorni: 12:00&ndash;15:30 &nbsp;|&nbsp; Sabato: 19:00&ndash;22:00',
+        'footer.bottom': '&copy; 2026 Punicum &middot; Ristorante di Pesce Fresco &middot; Santa Marinella',
+        'footer.legal': 'PUNICUM S.R.L - P.IVA/C.F. 17144451006 - REA RM 1698804',
+        'footer.credit': 'Realizzato da',
     }
 };
 
@@ -207,12 +209,12 @@ function initLangToggle() {
 
 /* ── HERO SLIDER ────────────────────────────────────────── */
 (function () {
-    const slides  = document.querySelectorAll('.slide');
-    const dots    = document.querySelectorAll('.dot');
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
     const prevBtn = document.getElementById('slidePrev');
     const nextBtn = document.getElementById('slideNext');
-    let current   = 0;
-    let timer     = null;
+    let current = 0;
+    let timer = null;
 
     function goTo(index) {
         slides[current].classList.remove('active');
@@ -246,7 +248,7 @@ function initLangToggle() {
 
     let touchStartX = 0;
     slider.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].clientX; }, { passive: true });
-    slider.addEventListener('touchend',   e => {
+    slider.addEventListener('touchend', e => {
         const dx = e.changedTouches[0].clientX - touchStartX;
         if (Math.abs(dx) > 50) { dx < 0 ? next() : prev(); startTimer(); }
     });
@@ -267,8 +269,8 @@ function initLangToggle() {
 /* ── MOBILE MENU ────────────────────────────────────────── */
 (function () {
     const hamburger = document.getElementById('hamburger');
-    const header    = document.getElementById('header');
-    const navLeft   = document.querySelector('.nav-left');
+    const header = document.getElementById('header');
+    const navLeft = document.querySelector('.nav-left');
 
     hamburger.addEventListener('click', () => {
         header.classList.toggle('open');
@@ -299,7 +301,7 @@ function initLangToggle() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const siblings = Array.from(entry.target.parentElement.children);
-                const delay    = siblings.indexOf(entry.target) * 80;
+                const delay = siblings.indexOf(entry.target) * 80;
                 setTimeout(() => entry.target.classList.add('visible'), delay);
                 observer.unobserve(entry.target);
             }
